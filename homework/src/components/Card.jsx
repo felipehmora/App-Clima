@@ -6,28 +6,23 @@ export default function Card(props) {
   return (
     <div className={styles.card}>
       <div className={styles.header}>
-      <span>{props.name}</span>
+        <div className={styles.cityName}>
+          <span>{props.name}</span>
+        </div>
       <button onClick={props.onClose}>X</button>
   
       </div>
       <div className={styles.content}>
         <img src= {`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="weather-icon" />
+        <div >
+          <h3 className={styles.temp}>Max:</h3>
+          <h3 className={styles.temp}>{props.max}</h3>
         <div>
-          <h3>Max:</h3>
-          <h3>{props.max}</h3>
-  
         </div>
-        <div>
-          <h3>
-            Min:
-          </h3>
-        </div>
-
-        <div>
-          <h3>
+          <h3 className={styles.temp}>Min:</h3>
+          <h3 className={styles.temp}>
             {props.min} {" "}
           </h3>
-
         </div>
       </div>
   

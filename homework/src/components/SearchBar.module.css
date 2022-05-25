@@ -1,0 +1,18 @@
+.SearchBar{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+}
+
+.input{
+    height: 2em;
+    border-radius: 5px;
+    border: 0.5 px solid 
+}
+
+.btn{
+    background-color: #ffb703;
+    border-radius: 5px;
+    color: #023047;
+}

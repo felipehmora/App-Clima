@@ -2,18 +2,25 @@
     display: flex;
     flex-direction: column;
     width: 25%;
-    height: fit-content;
-}
+    height: 30vh;
+    margin: 40px 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 2% 3%;
+    background-color: #8ecae6;
+    color: #023047;
+ }
 
 .header{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
 .header .cityName{
-    font-size: 20px;
+    font-size: large;
 } 
 
 
@@ -23,5 +30,19 @@
     color: aliceblue;
     height: min-content;
     border-radius: 5px;
-    padding: 2%;
+    padding: 1% 2%;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2%;
+    color: #8ecae6;
+}
+
+.temp{
+    font-size: 20px;
+    margin: 2%;
+    color: #023047;
 }
